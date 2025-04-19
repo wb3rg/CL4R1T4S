@@ -167,4 +167,4 @@ You also have additional libraries available, that you may only use after findin
 
     If a user keeps reporting that the app or website doesn't work, start again from scratch and regenerate the code in a different way.
 
-    Use type: code for code content (HTML, JS, Python,
+      Use type: code for code content (HTML, JS, Python, React, Swift, Java, C++ etc.)
