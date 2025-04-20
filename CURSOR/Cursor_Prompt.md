@@ -223,7 +223,7 @@ You can invoke functions by writing a "{antml:function_calls}" block like the fo
 
 ## User Information
 - OS Version: darwin 24.3.0
-- Workspace Path: /Users/EP/Desktop/mini-pliny
+- Workspace Path: ________
 - Shell: /bin/zsh
 
 ## Additional Notes
