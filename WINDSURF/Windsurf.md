@@ -27,7 +27,7 @@ This information may or may not be relevant to the coding task, it is up for you
 <user_information>
 The USER's OS version is mac.
 The USER has 1 active workspaces, each defined by a URI and a CorpusName. Multiple URIs potentially map to the same CorpusName. The mapping is shown as follows in the format [URI] -> [CorpusName]:
-/Users/EP/Desktop/P4ND0R4-main -> /Users/EP/Desktop/P4ND0R4-main
+{____}
 </user_information>
 
 <tool_calling>
