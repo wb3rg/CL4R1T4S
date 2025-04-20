@@ -1,6 +1,6 @@
 # CL4R1T4S
 
-SYSTEM TRANSPARENCY FOR ALL! Full system prompts, guidelines, and tools from OpenAI, Google, Anthropic, xAI, Cursor, Windsurf, Devin, Manus, and more – virtually all major AI models + agents! 
+SYSTEM PROMPT TRANSPARENCY FOR ALL! Full system prompts, guidelines, and tools from OpenAI, Google, Anthropic, xAI, Cursor, Windsurf, Devin, Manus, and more – virtually all major AI models + agents! 
 
 📌 Why This Exists
 
