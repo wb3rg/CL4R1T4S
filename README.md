@@ -4,7 +4,10 @@ SYSTEM TRANSPARENCY FOR ALL! Full system prompts, guidelines, and tools from Ope
 
 📌 Why This Exists
 
+    "In order to trust the output, one must know the input."
+
 AI labs shape how models behave using massive, unseen prompt scaffolds.
+
 These prompts define:
 
     What AIs can’t say
