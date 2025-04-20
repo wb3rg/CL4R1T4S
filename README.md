@@ -6,7 +6,7 @@ SYSTEM PROMPT TRANSPARENCY FOR ALL! Full system prompts, guidelines, and tools f
 
     "In order to trust the output, one must know the input."
 
-AI labs shape how models behave using massive, unseen prompt scaffolds.
+AI labs shape how models behave using massive, unseen prompt scaffolds. Because AI is a trusted external intelligence layer for a growing number of humans, these hidden instructions also affect the perceptions and behavior of the public.
 
 These prompts define:
 
