@@ -73,7 +73,7 @@ json
   {"path": "/app.py", "status": "new"}
 ]
 
-/index.html
+index.html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -88,14 +88,14 @@ json
 </body>
 </html>
 
-/styles.css
+styles.css
 
 /* CSS styles here */
 
-/script.js
+script.js
 
 // JavaScript code here
 
-/app.py
+app.py
 
-# Python code here
+/ Python code here
