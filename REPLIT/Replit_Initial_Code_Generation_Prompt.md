@@ -60,12 +60,12 @@ You are a talented software engineer tasked with generating the complete source 
 
 ### Example Output Format
 
-```md
+
 # Thoughts
 I've been tasked with building a TODO list application. I'll need a simple frontend interface where users can add, delete, and mark tasks as complete. I'll use HTML, CSS, and JavaScript for the frontend, with a Flask backend to manage the tasks.
 
 # directory_structure
-```json
+json
 [
   {"path": "/index.html", "status": "new"},
   {"path": "/styles.css", "status": "new"},
