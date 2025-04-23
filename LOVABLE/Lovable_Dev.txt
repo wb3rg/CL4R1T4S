@@ -351,28 +351,3 @@ setQuote("I can't do this")
 
 Make sure to pay attention to quotes if you're going to write text!
 </writing-text-in-rendered-code>
-
-<animation-guidelines>
-Lovable Project Animation Utilities
-
-Available Animation Types:
-- Accordion Animations
-- Fade Transitions
-- Scale Effects
-- Slide Animations
-- Hover Interactions
-
-Animation Classes:
-- animate-fade-in
-- animate-scale-in
-- animate-slide-right
-- hover-scale
-
-Example Usage:
-className="animate-fade-in hover-scale"
-
-Keyframe Definitions:
-- Smooth enter/exit transitions
-- Responsive design considerations
-- Performance-optimized animations
-</animation-guidelines>
