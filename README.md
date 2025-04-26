@@ -34,4 +34,6 @@ Send a pull request with:
 
     🧾 Context / notes (optional but helpful)
 
-Or hit up @elder_plinius
+Or hit up @elder_plinius on X or Discord
+
+Love, Pliny <3
