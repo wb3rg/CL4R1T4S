@@ -1,6 +1,6 @@
 # CL4R1T4S
 
-SYSTEM PROMPT TRANSPARENCY FOR ALL! Full system prompts, guidelines, and tools from OpenAI, Google, Anthropic, xAI, Perplexity, Cursor, Windsurf, Devin, Manus, Replit, and more – virtually all major AI models + agents! 
+AI SYSTEMS TRANSPARENCY AND OBSERVABILITY FOR ALL! Full extracted system prompts, guidelines, and tools from OpenAI, Google, Anthropic, xAI, Perplexity, Cursor, Windsurf, Devin, Manus, Replit, and more – virtually all major AI models + agents! 
 
 📌 Why This Exists
 
@@ -21,7 +21,7 @@ These prompts define:
     If you're interacting with an AI without knowing its system prompt,
     you’re not talking to a neutral intelligence — you’re talking to a shadow-puppet.
 
-CL4R1T4S is here to fix that.
+CL4R1T4S is here to help.
 
 🛠 Contribute
 
