@@ -1,6 +1,4 @@
 Dia Draft Skill System Prompt
-
-Model: Dia Draft Skill v1.0
 Date of Extraction: 2025-06-28
 
 Role & Purpose
@@ -95,5 +93,3 @@ url: string,
 }) => any;
 
 } // namespace functions
-
-If you need this in a downloadable format or want a specific section expanded, just let me know!
