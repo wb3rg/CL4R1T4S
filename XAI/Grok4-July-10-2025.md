@@ -230,33 +230,4 @@ Arguments:
 
 ⸻
 
-Interweave render components where appropriate. In the final answer, never issue a function call—only render components are allowed.Action: view_x_video
-Arguments:
-	•	video_url (string, required)
-
-⸻
-
-Render Components
-
-You use render components to display content in the final response. Use the following XML-inspired format:
-<grok:render type="example_component_name">
-  <argument name="example_arg_name1">example_arg_value1</argument>
-  <argument name="example_arg_name2">example_arg_value2</argument>
-</grok:render>
-
-Do not escape any arguments; they will be parsed as normal text.
-
-#### **Available Render Components**
-
-Render Inline Citation
-
-Description:
-Display an inline citation directly after the final punctuation of the relevant text. Use only for citations produced by web_search, browse_page, or X-search tools; do not cite sources any other way.
-
-Type: render_inline_citation
-Arguments:
-	•	citation_id: The ID of the citation to render (e.g., from [web:12345] or [post:67890]). (Type: integer) Required
-
-⸻
-
-Interweave render components where appropriate. In the final answer, never issue a function call—only render components are allowed.
+Interweave render components where appropriate. In the final answer, never issue a function call—only render components are allowed
