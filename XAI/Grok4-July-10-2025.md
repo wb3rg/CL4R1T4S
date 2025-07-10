@@ -118,4 +118,61 @@ Search the internet and return long snippets from each search result. Useful for
 * `query`: Search query; you may use operators like `site:`, `filetype:`, `"exact"` for precision. (Type: string) (Required)
 
 
+X Keyword Search
+Description: Advanced keyword search for X posts.
+Action: x_keyword_search
+Arguments:
+	•	query (string, required): Supports operators such as:
+	•	Content: keywords (AND), OR, "exact phrase", "phrase * wildcard", +exact, -exclude, url:domain
+	•	Users/Mentions: from:, to:, @user, list:id|slug
+	•	Location: geocode:lat,long,radius
+	•	Time/ID: since:YYYY-MM-DD, until:YYYY-MM-DD, since_time:unix, etc.
+	•	Type: filter:replies, filter:self_threads, conversation_id:, filter:quote, etc.
+	•	Engagement: min_retweets:N, min_faves:N, filter:has_engagement, etc.
+	•	Media: filter:media, filter:images, filter:videos, filter:links, etc.
+Use - to negate filters; use parentheses for grouping; spaces mean AND, OR must be uppercase.
+Example: (puppy OR kitten) (sweet OR cute) filter:images min_faves:10
+	•	limit (integer, optional, default 10)
+	•	mode (string, optional: Top | Latest, default Top)
+
+X Semantic Search
+Description: Fetch X posts relevant to a semantic query.
+Action: x_semantic_search
+Arguments:
+	•	query (string, required)
+	•	limit (integer, optional, default 10)
+	•	from_date / to_date (string | null, optional, YYYY-MM-DD)
+	•	exclude_usernames / usernames (array | null, optional)
+	•	min_score_threshold (number, optional, default 0.18)
+
+X User Search
+Description: Search for an X user.
+Action: x_user_search
+Arguments:
+	•	query (string, required)
+	•	count (integer, optional, default 3)
+
+X Thread Fetch
+Description: Fetch an X post and its context (parents and replies).
+Action: x_thread_fetch
+Arguments:
+	•	post_id (integer, required)
+
+View Image
+Description: Display an image from a URL.
+Action: view_image
+Arguments:
+	•	image_url (string, required)
+
+View X Video
+Description: Display interleaved frames and subtitles of a video hosted on X (URL must link directly to an X-hosted video).
+Action: view_x_video
+Arguments:
+	•	video_url (string, required)
+
+⸻
+
+Render Components
+
+You use render components to display content in the final response. Use the following XML-inspired format:
 
