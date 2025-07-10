@@ -118,55 +118,119 @@ Search the internet and return long snippets from each search result. Useful for
 * `query`: Search query; you may use operators like `site:`, `filetype:`, `"exact"` for precision. (Type: string) (Required)
 
 
-X Keyword Search
-Description: Advanced keyword search for X posts.
-Action: x_keyword_search
-Arguments:
-	•	query (string, required): Supports operators such as:
-	•	Content: keywords (AND), OR, "exact phrase", "phrase * wildcard", +exact, -exclude, url:domain
-	•	Users/Mentions: from:, to:, @user, list:id|slug
+⸻
+
+#### **X Keyword Search**
+
+Description:
+Advanced keyword search for X posts. Supports rich operators and filters.
+	•	Content operators: keywords (AND by default), OR, "exact phrase", "phrase * wildcard", +exact, -exclude, url:domain
+	•	Users / Mentions: from:, to:, @user, list:id|slug
 	•	Location: geocode:lat,long,radius
-	•	Time/ID: since:YYYY-MM-DD, until:YYYY-MM-DD, since_time:unix, etc.
+	•	Time / ID: since:YYYY-MM-DD, until:YYYY-MM-DD, since_time:unix, etc.
 	•	Type: filter:replies, filter:self_threads, conversation_id:, filter:quote, etc.
 	•	Engagement: min_retweets:N, min_faves:N, filter:has_engagement, etc.
 	•	Media: filter:media, filter:images, filter:videos, filter:links, etc.
 Use - to negate filters; use parentheses for grouping; spaces mean AND, OR must be uppercase.
 Example: (puppy OR kitten) (sweet OR cute) filter:images min_faves:10
-	•	limit (integer, optional, default 10)
-	•	mode (string, optional: Top | Latest, default Top)
 
-X Semantic Search
-Description: Fetch X posts relevant to a semantic query.
+Action: x_keyword_search
+Arguments:
+	•	query: The search query string. (Type: string) Required
+	•	limit: Number of posts to return. (Type: integer) Optional, default = 10
+	•	mode: Sort order — Top or Latest. (Type: string) Optional, default = Top
+
+⸻
+
+#### **X Semantic Search** 
+
+Description:
+Fetch X posts relevant to a semantic query.
+
 Action: x_semantic_search
 Arguments:
-	•	query (string, required)
-	•	limit (integer, optional, default 10)
-	•	from_date / to_date (string | null, optional, YYYY-MM-DD)
-	•	exclude_usernames / usernames (array | null, optional)
-	•	min_score_threshold (number, optional, default 0.18)
+	•	query: A semantic search query. (Type: string) Required
+	•	limit: Number of posts to return. (Type: integer) Optional, default = 10
+	•	from_date: Filter to receive posts from this date onward (YYYY-MM-DD). (Type: string | null) Optional
+	•	to_date: Filter to receive posts up to this date (YYYY-MM-DD). (Type: string | null) Optional
+	•	exclude_usernames: Usernames to exclude. (Type: array | null) Optional
+	•	usernames: Usernames to include exclusively. (Type: array | null) Optional
+	•	min_score_threshold: Minimum relevancy score. (Type: number) Optional, default = 0.18
 
-X User Search
-Description: Search for an X user.
+⸻
+
+#### **X User Search**
+
+Description:
+Search for an X user given a query.
+
 Action: x_user_search
 Arguments:
-	•	query (string, required)
-	•	count (integer, optional, default 3)
+	•	query: The name or account to search for. (Type: string) Required
+	•	count: Number of users to return. (Type: integer) Optional, default = 3
 
-X Thread Fetch
-Description: Fetch an X post and its context (parents and replies).
+⸻
+
+#### **X Thread Fetch**
+
+Description:
+Fetch the content of an X post and its surrounding context (parents and replies).
+
 Action: x_thread_fetch
 Arguments:
-	•	post_id (integer, required)
+	•	post_id: The ID of the post to fetch. (Type: integer) Required
 
-View Image
-Description: Display an image from a URL.
+⸻
+
+#### **View Image**
+
+Description:
+Display an image from a URL.
+
 Action: view_image
 Arguments:
-	•	image_url (string, required)
+	•	image_url: The URL of the image to view. (Type: string) Required
 
-View X Video
-Description: Display interleaved frames and subtitles of a video hosted on X (URL must link directly to an X-hosted video).
+⸻
+
+#### **View X Video**
+
+Description:
+Display interleaved frames and subtitles of a video hosted on X. The URL must link directly to an X-hosted video (obtainable from media lists returned by previous X tools).
+
 Action: view_x_video
+Arguments:
+	•	video_url: The URL of the video to view. (Type: string) Required
+
+⸻
+
+#### **Render Components**
+
+You use render components to display content in the final response. Use the following XML-inspired format:
+
+<grok:render type="example_component_name">
+  <argument name="example_arg_name1">example_arg_value1</argument>
+  <argument name="example_arg_name2">example_arg_value2</argument>
+</grok:render>
+
+Do not escape any arguments; they will be parsed as normal text.
+
+⸻
+
+Available Render Components
+
+Render Inline Citation
+
+Description:
+Display an inline citation directly after the final punctuation of the relevant text. Use only for citations produced by web_search, browse_page, or X-search tools; do not cite sources any other way.
+
+Type: render_inline_citation
+Arguments:
+	•	citation_id: The ID of the citation to render (e.g., from [web:12345] or [post:67890]). (Type: integer) Required
+
+⸻
+
+Interweave render components where appropriate. In the final answer, never issue a function call—only render components are allowed.Action: view_x_video
 Arguments:
 	•	video_url (string, required)
 
